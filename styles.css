@@ -535,6 +535,18 @@ h3 {
   text-transform: uppercase;
 }
 
+.journey-stage {
+  margin: 0 0 8px;
+  color: var(--warm);
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.timeline-item:nth-child(even) .journey-stage {
+  color: var(--accent);
+}
+
 .timeline-item:nth-child(even) .timeline-date {
   border-color: rgba(185, 95, 53, 0.22);
   background: rgba(185, 95, 53, 0.08);
