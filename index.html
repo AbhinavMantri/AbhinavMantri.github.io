@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Abhinav Mantri - Staff Software Engineer building reliable backend platforms, distributed systems, and fintech-grade payment and risk workflows.">
+    <title>Abhinav Mantri | Staff Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Abhinav Mantri portfolio home">Abhinav Mantri</a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#systems">Systems</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Staff Software Engineer</p>
+          <h1>Reliable backend platforms for complex, high-scale domains.</h1>
+          <p class="lead">
+            I design and build systems where correctness, latency, failure handling, and operational visibility matter:
+            payments, fraud-risk decisions, event-driven workflows, reconciliation, and cloud-native service platforms.
+          </p>
+          <div class="actions" aria-label="Profile links">
+            <a class="button primary" href="https://github.com/AbhinavMantri">GitHub</a>
+            <a class="button" href="mailto:metromaxabhinav@gmail.com">Email</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Engineering focus">
+          <div>
+            <span class="metric">Staff+</span>
+            <p>Architecture, service ownership, production tradeoffs, and engineering leadership.</p>
+          </div>
+          <div>
+            <span class="metric">Backend</span>
+            <p>Java, Spring Boot, microservices, Kafka-style event flows, Postgres, Redis, AWS.</p>
+          </div>
+          <div>
+            <span class="metric">Fintech</span>
+            <p>Payment lifecycle, provider integration, idempotency, auditability, and recovery paths.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Portfolio projects</h2>
+          <p>
+            These repositories are positioned as architecture and platform evidence, not toy examples.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div>
+              <p class="tag">Distributed backend platform</p>
+              <h3>Ticketmaster Capstone</h3>
+              <p>
+                Ticketmaster-style backend platform showing service boundaries, event-oriented workflows,
+                operational tradeoffs, local infrastructure, and an AWS deployment direction.
+              </p>
+            </div>
+            <a href="https://github.com/AbhinavMantri/ticketmaster-capstone">View repository</a>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <p class="tag">Payments and reconciliation</p>
+              <h3>Payment Service</h3>
+              <p>
+                Payment lifecycle service with provider order creation, HMAC signature verification,
+                webhook deduplication, idempotent initiation, and booking outcome integration.
+              </p>
+            </div>
+            <a href="https://github.com/AbhinavMantri/payment-service">View repository</a>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <p class="tag">Inventory consistency</p>
+              <h3>Seats Allocation Service</h3>
+              <p>
+                Seat allocation boundary for high-contention booking flows where concurrency,
+                reservation state, and consistency choices define user experience.
+              </p>
+            </div>
+            <a href="https://github.com/AbhinavMantri/seats-allocation-service">View repository</a>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <p class="tag">Booking workflow</p>
+              <h3>Booking Service</h3>
+              <p>
+                Booking orchestration surface for connecting user intent, seat reservation,
+                payment outcome, and durable booking state.
+              </p>
+            </div>
+            <a href="https://github.com/AbhinavMantri/booking-service">View repository</a>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <p class="tag">Identity and ownership</p>
+              <h3>User Service</h3>
+              <p>
+                User domain service that supports clean boundaries around customer identity,
+                account state, and downstream platform interactions.
+              </p>
+            </div>
+            <a href="https://github.com/AbhinavMantri/user-service">View repository</a>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <p class="tag">Event operations</p>
+              <h3>Event Management Service</h3>
+              <p>
+                Event management boundary for organizer workflows, catalog state,
+                and platform-facing event data.
+              </p>
+            </div>
+            <a href="https://github.com/AbhinavMantri/event-management-service">View repository</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="systems">
+        <div class="section-heading">
+          <p class="eyebrow">Engineering Signal</p>
+          <h2>How I think about systems</h2>
+        </div>
+        <div class="principles">
+          <article>
+            <h3>Bound the critical path</h3>
+            <p>Keep user-facing paths explicit, observable, and latency-aware. Move non-critical work behind events when it improves resilience.</p>
+          </article>
+          <article>
+            <h3>Design for provider failure</h3>
+            <p>External providers are signals and dependencies, not guarantees. Degraded modes, retries, reconciliation, and audit trails need first-class design.</p>
+          </article>
+          <article>
+            <h3>Make operations visible</h3>
+            <p>Production systems need dashboards, logs, idempotency keys, state transitions, and manual recovery paths that support real incident handling.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Open to Staff+ engineering, backend platform, and engineering leadership conversations.</h2>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:metromaxabhinav@gmail.com">Email Abhinav</a>
+          <a class="button" href="https://github.com/AbhinavMantri">GitHub Profile</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
