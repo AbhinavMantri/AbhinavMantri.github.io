@@ -27,8 +27,11 @@ if (-not (git status --short)) {
 $repoFullName = "$Owner/$Repo"
 
 $repoExists = $false
+$ErrorActionPreference = "Continue"
 gh repo view $repoFullName --json name 2>$null
-if ($LASTEXITCODE -eq 0) {
+$repoViewExitCode = $LASTEXITCODE
+$ErrorActionPreference = "Stop"
+if ($repoViewExitCode -eq 0) {
   $repoExists = $true
 }
 
