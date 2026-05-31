@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Abhinav Mantri - Staff Software Engineer building reliable backend platforms, distributed systems, and fintech-grade payment and risk workflows.">
+    <meta name="description" content="Abhinav Mantri - Staff Software Engineer building reliable backend platforms, distributed systems, email storage, and fintech-grade payment and risk workflows.">
     <title>Abhinav Mantri | Staff Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -30,19 +30,40 @@
             <a class="button primary" href="https://github.com/AbhinavMantri">GitHub</a>
             <a class="button" href="mailto:metromaxabhinav@gmail.com">Email</a>
           </div>
+          <div class="proof-strip" aria-label="Portfolio proof points">
+            <div>
+              <strong>Staff+</strong>
+              <span>Architecture and service ownership</span>
+            </div>
+            <div>
+              <strong>Backend</strong>
+              <span>Java, Spring Boot, Postgres, Redis, AWS</span>
+            </div>
+            <div>
+              <strong>Systems</strong>
+              <span>Payments, risk, email storage, event flows</span>
+            </div>
+          </div>
         </div>
-        <aside class="hero-panel" aria-label="Engineering focus">
-          <div>
-            <span class="metric">Staff+</span>
-            <p>Architecture, service ownership, production tradeoffs, and engineering leadership.</p>
+        <aside class="system-map" aria-label="Backend architecture visual">
+          <div class="map-header">
+            <span>Production System Lens</span>
+            <strong>Backend platform</strong>
           </div>
-          <div>
-            <span class="metric">Backend</span>
-            <p>Java, Spring Boot, microservices, Kafka-style event flows, Postgres, Redis, AWS.</p>
+          <div class="map-canvas">
+            <div class="map-node node-primary">API Gateway</div>
+            <div class="map-node">Booking</div>
+            <div class="map-node">Payments</div>
+            <div class="map-node">Risk Signals</div>
+            <div class="map-node">Mail Storage</div>
+            <div class="map-node">Events</div>
+            <div class="map-node">Postgres</div>
+            <div class="map-node">Object Store</div>
           </div>
-          <div>
-            <span class="metric">Fintech</span>
-            <p>Payment lifecycle, provider integration, idempotency, auditability, and recovery paths.</p>
+          <div class="map-footer">
+            <span>Idempotency</span>
+            <span>Observability</span>
+            <span>Recovery</span>
           </div>
         </aside>
       </section>
@@ -57,7 +78,7 @@
         </div>
 
         <div class="project-grid">
-          <article class="project-card">
+          <article class="project-card featured">
             <div>
               <p class="tag">Email storage platform</p>
               <h3>MailVault</h3>
@@ -69,7 +90,7 @@
             <a href="https://github.com/AbhinavMantri/mailvault">View repository</a>
           </article>
 
-          <article class="project-card">
+          <article class="project-card featured">
             <div>
               <p class="tag">Distributed backend platform</p>
               <h3>Ticketmaster Capstone</h3>
@@ -81,7 +102,7 @@
             <a href="https://github.com/AbhinavMantri/ticketmaster-capstone">View repository</a>
           </article>
 
-          <article class="project-card">
+          <article class="project-card featured">
             <div>
               <p class="tag">Payments and reconciliation</p>
               <h3>Payment Service</h3>
