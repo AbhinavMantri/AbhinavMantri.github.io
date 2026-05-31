@@ -437,6 +437,18 @@ h3 {
   color: var(--muted);
 }
 
+.experience-item ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.experience-item li {
+  padding-left: 2px;
+}
+
 .experience-item .tag {
   margin-bottom: 10px;
 }
