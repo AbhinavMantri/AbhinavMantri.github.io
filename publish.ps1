@@ -26,7 +26,13 @@ if (-not (git status --short)) {
 
 $repoFullName = "$Owner/$Repo"
 
-if (-not (gh repo view $repoFullName --json name 2>$null)) {
+$repoExists = $false
+gh repo view $repoFullName --json name 2>$null
+if ($LASTEXITCODE -eq 0) {
+  $repoExists = $true
+}
+
+if (-not $repoExists) {
   gh repo create $repoFullName --public --source . --remote origin --push
 } else {
   if (-not (git remote get-url origin 2>$null)) {
