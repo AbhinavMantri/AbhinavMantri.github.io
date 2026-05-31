@@ -564,7 +564,7 @@ h3 {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin: 0 0 4px;
+  margin: 0 0 14px;
   color: var(--steel);
   font-size: 0.92rem;
   font-weight: 800;
@@ -581,13 +581,6 @@ h3 {
 
 .timeline-item:nth-child(even) .company::before {
   background: var(--warm);
-}
-
-.role-meta {
-  margin: 0 0 14px;
-  color: var(--muted);
-  font-size: 0.86rem;
-  font-weight: 750;
 }
 
 .timeline-tags {
