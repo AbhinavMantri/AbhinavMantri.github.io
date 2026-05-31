@@ -441,6 +441,12 @@ h3 {
   margin-bottom: 10px;
 }
 
+.company {
+  margin-top: -4px;
+  color: var(--steel);
+  font-weight: 800;
+}
+
 .split {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
